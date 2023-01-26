@@ -8,7 +8,7 @@ logging.basicConfig(filename='mystery.log',
 
 
 try:
-    database = 'postgresql+psycopg2://shaistha:shaistha@localhost:5432/mystery_db'
+    database = 'postgresql+psycopg2://usrname:pwd@host:port/dbname'
 
     engine = create_engine(database)
     con = engine.raw_connection()
